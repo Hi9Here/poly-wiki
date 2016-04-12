@@ -1,0 +1,29 @@
+<link rel="import" href="../markdown-edit/markdown-edit.html">
+<link rel="import" href="../mediator-data/mediator-data.html">
+<link rel="import" href="../polymer/polymer.html">
+<!--
+`<poly-wiki></poly-wiki>` wiki
+@demo demo.html
+-->
+
+<dom-module id="poly-wiki">
+<template>
+<mediator-data edit-default id="w" data="{{md}}" location="https://hi9-devplatform.firebaseio.com/" folder="wiki" default-folder="wiki"></mediator-data>
+<markdown-edit focus="false" value="{{md}}"></markdown-edit>
+
+</template>
+</dom-module>
+<script>
+Polymer({
+  is: "poly-wiki",
+  properties: {
+    url: {},
+    doc: {
+      notify: true
+    },
+    title: {
+      notify: true
+    }
+  }
+})
+</script>

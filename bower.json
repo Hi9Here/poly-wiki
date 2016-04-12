@@ -1,0 +1,15 @@
+{
+  "name": "poly-wiki",
+  "version": "1.0.0",
+  "description": "wiki",
+  "main": "poly-wiki.html",
+  "keywords": [
+    "polymer",
+    "web-components"
+  ],
+  "dependencies": {
+    "polymer": "*",
+    "mediator-data": "marcus7777/mediator-data#4e2b27cff5",
+    "markdown-edit": "marcus7777/markdown-edit#c419089f80"
+  }
+}
