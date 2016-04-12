@@ -8,7 +8,7 @@
 
 <dom-module id="poly-wiki">
 <template>
-<mediator-data edit-default id="w" data="{{md}}" location="https://hi9-devplatform.firebaseio.com/" folder="wiki" default-folder="wiki"></mediator-data>
+<mediator-data edit-default id="w" data="{{md}}" location="{{url}}" folder="wiki" default-folder="wiki"></mediator-data>
 <markdown-edit focus="false" value="{{md}}"></markdown-edit>
 
 </template>
@@ -17,13 +17,7 @@
 Polymer({
   is: "poly-wiki",
   properties: {
-    url: {},
-    doc: {
-      notify: true
-    },
-    title: {
-      notify: true
-    }
+    url: {value:"https://hi9-devplatform.firebaseio.com/"}
   }
 })
 </script>
